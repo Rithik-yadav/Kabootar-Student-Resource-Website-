@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Quiz</title>
+    <link rel="stylesheet" href="Common.css">
+    <link rel="stylesheet" href="mockquiz.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="left-contianer">
+            <div id="logo">
+                <div id="kabootar-text">Kabootar</div>
+            </div>
+            <div id="details" class="leftcontainer">
+                <div id="profile-photo">
+                </div>
+                <div id="text-details">
+                    <span id="name">
+                        <%= name%>
+                    </span>
+                    <span class="email" id="id-mail"><a class="email" href="rithik.yadav.22cse@bmu.edu.in">
+                            <%= mail%>
+                        </a></span>
+                    <span id="year">
+                        <%= year%> <sup>year</sup>
+                            <%= course%>
+                    </span>
+                </div>
+                <div id="menu">
+                    <span class="Dashboard"><a class="Dashboard" href="/Dashborard">Dashboard</a></span>
+                    <span class="Notes"><a class="Notes" href="/Notes">Notes</a></span>
+                    <span class="pyq"><a class="pyq" href="/pyq">Previous Year </a></span>
+                    <span class="schedule"><a class="schedule" href="/schedule">Schedule</a></span>
+                    <span class="Mock-Quiz"><a class="Mock-Quiz" href="/mockquiz">Mock Quiz</a></span>
+                    <span class="Settings"><a class="Settings" href="/setting">Settings</a></span>
+                    <span class="About-us"><a class="About-us" href="/Aboutus">About us</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+
+            <div class="notes">
+                <div id="notes-text">Here you can give Mock Quizes</div>
+                <input type="text" placeholder="Search for quiz you want to give 🔎" id="search-notes"
+                    oninput="searchFun()" name="">
+                <div id="table-updates">
+                    <table class="styled-table" id="styled-table">
+                        <thead>
+                            <tr>
+                                <th id="Sno-table">S.No</th>
+                                <th id="course-table">Course</th>
+                                <th id="topic-table">Topic</th>
+                                <th id="link-table">Link</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>DC & CN</td>
+                                <td>HTML</td>
+                                <td><a href="quiz1.html" class="anchor" target="_blank">Click here</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Java Programming</td>
+                                <td>Dynamic Programming</td>
+                                <td><a href="#" class="anchor">Click here</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>MFE-1</td>
+                                <td>Linear Algrbra</td>
+                                <td><a href="#" class="anchor">Click here</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>DC & CN</td>
+                                <td>Domain Name System</td>
+                                <td><a href="#" class="anchor">Click here</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Operating System</td>
+                                <td>Memory Management</td>
+                                <td><a href="#" class="anchor">Click here</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>DSA</td>
+                                <td>Linked List</td>
+                                <td><a href="#" class="anchor">Click here</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>BEEE</td>
+                                <td>Depenedent Sources</td>
+                                <td><a href="#" class="anchor">Click here</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>MFE-2</td>
+                                <td>Z-score</td>
+                                <td><a href="#" class="anchor">Click here</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>DC & CN</td>
+                                <td>Transimission Control Protocol</td>
+                                <td><a href="#" class="anchor">Click here</a></td>
+
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>DC & CN</td>
+                                <td>UDP</td>
+                                <td><a href="#" class="anchor">Click here</a></td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="search.js"></script>
+
+</html>

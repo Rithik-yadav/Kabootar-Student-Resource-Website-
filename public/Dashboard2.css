@@ -1,0 +1,160 @@
+.Dashboard {
+  color: #ff6912;
+}
+.right-container {
+  display: flex;
+  margin: 20px 20px 20px 20px;
+  background: white;
+  padding-top: none;
+  width: 100%;
+  height: 560px;
+  border-radius: 30px;
+  padding-left: 55px;
+}
+.welcome {
+  padding-top: 20px;
+  width: 60%;
+  margin-right: 20px;
+}
+#welcome-text,
+#date,
+#quote {
+  color: black;
+  display: block;
+}
+#welcome-text {
+  font-size: 38px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#quote {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serifz;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+#date {
+  color: grey;
+}
+.goals {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: none;
+  margin-left: 10px;
+  margin-right: none;
+  background-color: #ff6912;
+  width: 40%;
+  height: 100px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 540px;
+  background-color: #f9fafc;
+}
+#goals-text {
+  display: block;
+  margin-left: 40px;
+  margin-top: 20px;
+  background-color: #19a7ce;
+  width: 270px;
+  border-radius: 15px;
+  text-align: center;
+  height: fit-content;
+  font-size: 35px;
+  color: #f6f1f1;
+}
+#g1,
+#g2,
+#g3,
+#g4 {
+  font-size: 17px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: block;
+  padding-top: 10px;
+  color: #3c486b;
+}
+#logo-bml {
+  background-image: url("BML_Munjal_University-Logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 225px;
+  height: 200px;
+}
+
+.today {
+  margin-top: 30px;
+  border-bottom: 2px solid rgba(108, 107, 107, 0.779);
+}
+#extras-button {
+  /* padding-left: 430px; */
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+  font-size: 30px;
+  display: inline;
+}
+#extras-button:hover {
+  color: #ff6912;
+}
+#today-text {
+  margin-right: 390px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+}
+#emoji1 {
+  display: inline;
+  font-size: 40px;
+}
+#today-1-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+  margin-right: 220px;
+  margin-top: 5px;
+}
+#today-1-text-time,
+#today-1-text-club {
+  color: grey;
+  display: block;
+  margin-left: 55px;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 45px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 10px 10px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr:hover {
+  background-color: #19a7ce7d;
+}
+#date-table {
+  border-top-left-radius: 10px;
+}
+#org-table {
+  border-top-right-radius: 10px;
+}

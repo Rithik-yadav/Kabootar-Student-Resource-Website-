@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="left-contianer">
+            <div id="logo">
+                <div id="kabootar-text">Kabootar</div>
+            </div>
+            <div id="details" class="leftcontainer">
+                <div id="profile-photo">
+                </div>
+                <div id="text-details">
+                    <span id="name">
+                        <%= name%>
+                    </span>
+                    <span class="email" id="id-mail"><a class="email" href="rithik.yadav.22cse@bmu.edu.in">
+                            <%= mail%>
+                        </a></span>
+                    <span id="year">
+                        <%= year%> <sup>year</sup>
+                            <%= course%>
+                    </span>
+                </div>
+                <div id="menu">
+                    <span class="Dashboard"><a class="Dashboard" href="/Dashborard">Dashboard</a></span>
+                    <span class="Notes"><a class="Notes" href="/Notes">Notes</a></span>
+                    <span class="pyq"><a class="pyq" href="/pyq">Previous Year </a></span>
+                    <span class="schedule"><a class="schedule" href="/schedule">Schedule</a></span>
+                    <span class="Mock-Quiz"><a class="Mock-Quiz" href="/mockquiz">Mock Quiz</a></span>
+                    <span class="Settings"><a class="Settings" href="/setting">Settings</a></span>
+                    <span class="About-us"><a class="About-us" href="/Aboutus">About us</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <h1 id="main-heading">ABOUT US</h1>
+            <div class="about-us">
+                <h2 class="heading-about">Our Mission</h2>
+                <p class="text-about">At Kabootar, our mission is to empower students on their educational journey by
+                    providing them with the tools and
+                    resources they need to excel academically and make informed decisions about their future.</p>
+            </div>
+            <div class="about-us">
+                <h2 class="heading-about">What We Offer</h2>
+                <p class="text-about">Kabootar offers a wide range of educational services, including access to a vast
+                    repository of previous year question
+                    papers, personalized mock tests, real-time class timetables, progress tracking tools, and timely
+                    updates
+                    on university
+                    events and deadlines.</p>
+            </div>
+            <h2 class="heading-about">Future Plans</h2>
+            <div class="about-us">
+                <p class="text-about">We are continuously evolving to meet the changing needs of students. Stay tuned
+                    for
+                    exciting updates and new features as
+                    we strive to enhance your learning experience.</p>
+            </div>
+
+            <!-- Add font awesome icons -->
+            <div id="socials">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

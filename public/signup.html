@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/19364bd079.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="main">
+        <div id="outside">
+            <div id="logo">
+                <div id="real-logo"></div>
+                <p id="kabootar-text">Kabootar</p>
+            </div>
+            <form action="index.html" id="signup">
+                <div class="signup">
+                    <h1 id="sign_text">Sign Up</h1>
+                    <div class="inputs"> <input class="input" type="number" name="year" id="year" placeholder="Year"
+                            required onkeyup="return validateYear()"><span id="yearError"></span></div>
+
+                    <div class="inputs"> <input class="input" type="text" name="name" id="name" placeholder="Name"
+                            required onkeyup="return validateName()"><span id="nameError"></span>
+                    </div>
+
+                    <div class="inputs"> <input class="input" type="email" name="mail" id="mail" placeholder="Mail"
+                            required onkeyup="return validateMail()"><span id="mailError"></span></div>
+
+                    <div class="inputs"> <input class="input" type="password" name="password" id="password"
+                            placeholder="Password" required onkeyup="return validatepass()"><span id="passError"></span>
+                    </div>
+
+                    <div class="inputs"> <input class="input" type="password" name="cpassword" id="cpassword"
+                            placeholder="Confirm Password" required onkeyup="return validateCpass()"><span
+                            id="cpassError"></span>
+                    </div>
+                    <div class="inputs"> <label for="cars" class="course">Course:</label>
+
+                        <select name="course" id="course" class="course" required>
+                            <option value=" B.tech">B.Tech</option>
+                            <option value="BBA">BBA</option>
+                            <option value="B.COM">B.COM</option>
+                            <option value="MBA">MBA</option>
+                        </select>
+                    </div>
+
+                    <div class="register"> <button id="register" type="submit">Register</button></div>
+                </div>
+                <span id="login-span">Already have an account?<a id="link_login" href="index.html">Login Here</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="signup.js"></script>
+
+</html>

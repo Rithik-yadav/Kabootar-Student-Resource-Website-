@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="leftone">
+
+            <div id="kabootar">
+                <img src="Kabootar.png" alt="Description of the image">
+                <h2 id="txtk">Kabootar</h2>
+            </div>
+        </div>
+        <form class="login_form" id="loginform" onsubmit="return validation()" action="Dashborard.html">
+            <h2 class="login" id="Welcome">Welcome</h2>
+            <div class="login" id="container">
+                <div class="login" id="username">
+                    <input type="email" id="usernameInput" placeholder="Username" required>
+                    <box-icon name='user'></box-icon>
+                    <span id="emailerror"></span>
+                </div>
+                <div class="login" id="password">
+                    <input type="password" id="passwordInput" placeholder="Password" required>
+                    <box-icon name='lock-alt' type='solid'></box-icon>
+                    <span id="passerror"></span>
+                </div>
+                <div class="login" id="Remember">
+                    <input type="checkbox"> Remember me
+                </div>
+                <div class="login" id="submit">
+                    <button type="submit"><b>Log in</b></button>
+                </div>
+                <div class="login" id="forgotpassowrd">
+                    <a href="#" id="forgotpassword">forgot passowrd</a>
+                </div>
+            </div>
+            <div class="login" id="signup">
+                <span>Don't have an account?</span>
+                <a href="#" id="signupLink">Sign Up</a>
+            </div>
+        </form>
+    </div>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html>

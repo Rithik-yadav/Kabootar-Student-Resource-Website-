@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="Common.css">
+    <link rel="stylesheet" href="setting.css">
+    <link rel="stylesheet" href="pyq.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="left-contianer">
+            <div id="logo">
+                <div id="kabootar-text">Kabootar</div>
+            </div>
+            <div id="details" class="leftcontainer">
+                <div id="profile-photo">
+                </div>
+                <div id="text-details">
+                    <span id="name">
+                        <%= name%>
+                    </span>
+                    <span class="email" id="id-mail"><a class="email" href="rithik.yadav.22cse@bmu.edu.in">
+                            <%= mail%>
+                        </a></span>
+                    <span id="year">
+                        <%= year%> <sup>year</sup>
+                            <%= course%>
+                    </span>
+                </div>
+                <div id="menu">
+                    <span class="Dashboard"><a class="Dashboard" href="/Dashborard">Dashboard</a></span>
+                    <span class="Notes"><a class="Notes" href="/Notes">Notes</a></span>
+                    <span class="pyq"><a class="pyq" href="/pyq">Previous Year </a></span>
+                    <span class="schedule"><a class="schedule" href="/schedule">Schedule</a></span>
+                    <span class="Mock-Quiz"><a class="Mock-Quiz" href="/mockquiz">Mock Quiz</a></span>
+                    <span class="Settings"><a class="Settings" href="/setting">Settings</a></span>
+                    <span class="About-us"><a class="About-us" href="/Aboutus">About us</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <h1>Settings</h1>
+            <form action="/logout" method="post" id="logout-form">
+                <button class="btn" id="logout">LogOut</button>
+            </form>
+            <div id="forms">
+
+                <form action="/passchange" method="post">
+                    <label for="passchange" id="passchange">Change Password: </label>
+                    <input class="input" placeholder="Enter new Password" name="passchange">
+                    <button class="button2">
+                        Change
+                    </button>
+                </form>
+                <form action="/emailchange" method="post">
+                    <label for="passchange" id="emailchange">Change Email`: </label>
+                    <input class="input" placeholder="Enter new Email" name="emailchange" type="email">
+                    <button class="button2">
+                        Change
+                    </button>
+                </form>
+                <form action="/yearchange" method="post">
+                    <label for="yearchange" id="yearchange">Change Year: </label>
+                    <input class="input" placeholder="Enter new Year" name="yearchange">
+                    <button class="button2">
+                        Change
+                    </button>
+                </form>
+                <form action="/namechange" method="post">
+                    <label for="namechange" id="namechange">Change Name: </label>
+                    <input class="input" placeholder="Enter Name" name="namechange">
+                    <button class="button2">
+                        Change
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+
+
+        <script>
+
+            document.getElementById('clickButton').addEventListener('click', async () => {
+                // Use fetch to send a POST request to the server
+                const response = await fetch('/button-click', {
+                    method: 'POST',
+                });
+
+                // Handle the server response
+                const result = await response.text();
+                console.log(result);
+            });
+        </script>
+</body>
+
+</html>

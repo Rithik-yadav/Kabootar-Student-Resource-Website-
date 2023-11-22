@@ -1,0 +1,91 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Add a font stack for better cross-browser compatibility */
+}
+#main-container {
+  display: flex;
+}
+#logo {
+  width: 200px;
+  margin: 10px 20px 0; /* Adjust margins for logo */
+  width: 150px;
+  height: 50px;
+  background-color: transparent;
+  background-image: url("Kabootar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#kabootar-text {
+  padding-top: 22px;
+  font-size: 26px;
+  margin-left: 54px;
+  padding-right: 2px;
+  color: white;
+  font-weight: bold;
+}
+
+.leftcontainer {
+  margin: 30px 0 0 30px; /* Adjust margins for left container */
+  background-color: transparent;
+  width: 100;
+  height: auto; /* Use "auto" for dynamic height based on content */
+  color: white; /* Set the text color to white */
+}
+
+#profile-photo {
+  border-radius: 50%; /* Circular profile photo */
+  width: 70px;
+  height: 70px;
+  background-image: url("profile_photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.email,
+#year,
+#name {
+  text-decoration: none;
+  display: block;
+  color: grey;
+}
+
+#name {
+  width: fit-content;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 30px;
+  color: white; /* Set the text color to white */
+}
+
+#menu {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.Dashboard,
+.pyq,
+.Notes,
+.Mock-Quiz,
+.schedule,
+.About-us,
+.Settings {
+  font-size: 24px;
+  margin-bottom: 18px;
+  display: block;
+  text-decoration: none;
+  color: #979797;
+  font-family: monospace;
+  font-weight: bold;
+}
+.Dashboard:hover,
+.Notes:hover,
+.pyq:hover,
+.Settings:hover,
+.schedule:hover,
+.About-us:hover,
+.Mock-Quiz:hover {
+  color: #4682a9;
+}
