@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule</title>
     <link rel="stylesheet" href="Common.css">
-    <link rel="stylesheet" href="pyq.css">
+    <link rel="stylesheet" href="schedule.css">
 </head>
 
 <body>
@@ -19,19 +19,25 @@
                 <div id="profile-photo">
                 </div>
                 <div id="text-details">
-                    <span id="name">Rithik Yadav</span>
-                    <span class="email" id="id-mail"><a class="email"
-                            href="rithik.yadav.22cse@bmu.edu.in">rithik.yadav.22cse@bmu.edu.in</a></span>
-                    <span id="year"> 2<sup>nd</sup> year B.Tech</span>
+                    <span id="name">
+                        <%= name%>
+                    </span>
+                    <span class="email" id="id-mail"><a class="email" href="rithik.yadav.22cse@bmu.edu.in">
+                            <%= mail%>
+                        </a></span>
+                    <span id="year">
+                        <%= year%> <sup>year</sup>
+                            <%= course%>
+                    </span>
                 </div>
                 <div id="menu">
-                    <span class="Dashboard"><a class="Dashboard" href="Dashboard2.css">Dashboard</a></span>
-                    <span class="Notes"><a class="Notes" href="Notes.html">Notes</a></span>
-                    <span class="pyq"><a class="pyq" href="pyq.html">Previous Year </a></span>
-                    <span class="schedule"><a class="schedule" href="schedule.html">Schedule</a></span>
-                    <span class="Mock-Quiz"><a class="Mock-Quiz" href="mockquiz.html">Mock Quiz</a></span>
-                    <span class="Settings"><a class="Settings" href="..Settings.html">Settings</a></span>
-                    <span class="About-us"><a class="About-us" href="Aboutus.html">About us</a></span>
+                    <span class="Dashboard"><a class="Dashboard" href="/Dashborard">Dashboard</a></span>
+                    <span class="Notes"><a class="Notes" href="/Notes">Notes</a></span>
+                    <span class="pyq"><a class="pyq" href="/pyq">Previous Year </a></span>
+                    <span class="schedule"><a class="schedule" href="/schedule">Schedule</a></span>
+                    <span class="Mock-Quiz"><a class="Mock-Quiz" href="/mockquiz">Mock Quiz</a></span>
+                    <span class="Settings"><a class="Settings" href="/setting">Settings</a></span>
+                    <span class="About-us"><a class="About-us" href="/Aboutus">About us</a></span>
                 </div>
             </div>
         </div>
